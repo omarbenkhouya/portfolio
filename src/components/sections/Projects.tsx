@@ -191,7 +191,7 @@ function ProjectMedia({
 }) {
   const hasImage = !!project.image;
   const hasDemo = !!project.demo;
-  const hasAutoLoopDemo = (project.id === "phone-store" || project.id === "maroc-guide") && hasDemo;
+  const hasAutoLoopDemo = (project.id === "phone-store" || project.id === "maroc-guide" || project.id === "soccernet") && hasDemo;
   const hasAutoLoopFrames = project.id === "robotic-arm" || project.id === "rag-system";
   const isRagFeatured = project.id === "rag-system" && !compact;
   const roboticArmFrames = ["/rts1.png", "/rts2.png", "/rts3.png", "/rts4.png", "/rts5.png"];
@@ -214,17 +214,30 @@ function ProjectMedia({
         isRagFeatured && "md:h-full md:min-h-[24rem]"
       )}
     >
-      {hasAutoLoopDemo && (
-        <video
-          src={project.demo}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="absolute inset-0 h-full w-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-        />
-      )}
+      {hasAutoLoopDemo && (() => {
+        const isGif = /\.gif(?:\?|$)/i.test(project.demo || "");
+        if (isGif) {
+          return (
+            <img
+              src={project.demo}
+              alt="Demo"
+              className="absolute inset-0 h-full w-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+              crossOrigin="anonymous"
+            />
+          );
+        }
+        return (
+          <video
+            src={project.demo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="absolute inset-0 h-full w-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+          />
+        );
+      })()}
 
       {/* ↓ PROJECT IMAGE — place in /public/images/projects/<id>.png */}
       {hasAutoLoopFrames ? (
