@@ -216,7 +216,7 @@ function ProjectMedia({
     >
       {hasAutoLoopDemo && (
         <video
-          src={project.demo!}
+          src={project.demo}
           autoPlay
           muted
           loop

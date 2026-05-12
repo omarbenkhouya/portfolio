@@ -72,7 +72,7 @@ export const projects = [
     live: null,
     // ↓ Put soccernet.gif in /public/
     image: "/soccernet.gif",
-    demo: "/videos/demos/soccernet-demo.mp4",
+    demo: "https://res.cloudinary.com/dlzvasqsh/image/upload/v1778587270/soccernet_k7i9xc.gif",
     category: "tags.cv",
   },
   {
@@ -93,7 +93,7 @@ export const projects = [
     github: null,
     live: "https://phone-store-jade-theta.vercel.app/",
     image: "/images/projects/phone-store.png",
-    demo: "/phone-store.mp4",
+    demo: "https://res.cloudinary.com/dlzvasqsh/video/upload/v1778601387/phone-store_lb8zyg.mp4",
     category: "tags.fullstack",
   },
   {
@@ -135,7 +135,7 @@ export const projects = [
     github: "https://github.com/aymanht/maroc-guid",
     live: "https://maroc-guid-fkng.vercel.app/",
     image: "/images/projects/chatbot.png",
-    demo: "/maroc-guide.mp4",
+    demo: "https://res.cloudinary.com/dlzvasqsh/video/upload/v1778588021/maroc-guide_nk5yui.mp4",
     category: "tags.fullstack",
   },
 ];

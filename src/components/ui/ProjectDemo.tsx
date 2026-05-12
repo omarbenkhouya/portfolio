@@ -53,16 +53,55 @@ export function ProjectDemo({ src, compact }: ProjectDemoProps) {
                 <X size={12} /> Close
               </button>
 
-              {/* Video */}
-              {/* ↓ Place your demo videos in /public/videos/demos/ */}
-              <video
-                src={src}
-                controls
-                autoPlay
-                className="w-full aspect-video"
-              >
-                Your browser does not support the video tag.
-              </video>
+              {/* Media: support video files, GIF/images, and YouTube embeds */}
+              {(() => {
+                const isYouTube = /youtu(?:\.be|be\.com)/i.test(src);
+                const isImage = /\.(gif|png|jpe?g|webp)(?:\?|$)/i.test(src);
+                const isVideo = /\.(mp4|webm|mov)(?:\?|$)/i.test(src) || /video\//i.test(src);
+
+                if (isYouTube) {
+                  // Extract video id and render embed
+                  let videoId = null;
+                  try {
+                    const url = new URL(src);
+                    if (url.hostname.includes('youtu.be')) {
+                      videoId = url.pathname.slice(1);
+                    } else {
+                      videoId = url.searchParams.get('v');
+                    }
+                  } catch (e) {
+                    // fallback regex
+                    const m = src.match(/(?:v=|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
+                    videoId = m ? m[1] : null;
+                  }
+
+                  const embedSrc = videoId
+                    ? `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&rel=0`
+                    : src;
+
+                  return (
+                    <div className="w-full aspect-video">
+                      <iframe
+                        src={embedSrc}
+                        title="Demo video"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        className="w-full h-full"
+                      />
+                    </div>
+                  );
+                }
+
+                if (isImage) {
+                  return <img src={src} alt="Demo" className="w-full object-contain" />;
+                }
+
+                // Default: use HTML5 video for mp4/webm or unknown types
+                return (
+                  <video src={src} controls autoPlay className="w-full aspect-video">
+                    Your browser does not support the video tag.
+                  </video>
+                );
+              })()}
             </motion.div>
           </motion.div>
         )}
