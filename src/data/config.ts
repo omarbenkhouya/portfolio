@@ -72,7 +72,7 @@ export const projects = [
     live: null,
     // ↓ Put soccernet.gif in /public/
     image: "/soccernet.gif",
-    demo: "https://res.cloudinary.com/dlzvasqsh/image/upload/v1778587270/soccernet_k7i9xc.gif",
+    demo: "https://res.cloudinary.com/dlzvasqsh/image/upload/f_gif/v1778587270/soccernet_k7i9xc.gif",
     category: "tags.cv",
   },
   {

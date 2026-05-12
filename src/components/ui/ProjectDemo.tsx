@@ -92,7 +92,7 @@ export function ProjectDemo({ src, compact }: ProjectDemoProps) {
                 }
 
                 if (isImage) {
-                  return <img src={src} alt="Demo" className="w-full object-contain" />;
+                  return <img src={src} alt="Demo" className="w-full object-contain" crossOrigin="anonymous" />;
                 }
 
                 // Default: use HTML5 video for mp4/webm or unknown types
