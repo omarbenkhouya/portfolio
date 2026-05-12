@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "projects": "Projets",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "contact": "Contact",
+    "available": "Disponible · Juil. 2026"
+  },
+  "hero": {
+    "badge": "Master en IA & Objets Connectés — Université Ibn Tofail",
+    "role1": "Ingénieur IA",
+    "role2": "Développeur Full-Stack",
+    "role3": "Spécialiste Systèmes RAG",
+    "location": "Kénitra, Maroc",
+    "description": "Je construis des systèmes intelligents et livre de vrais produits. Des pipelines RAG en production sur des données bancaires réelles, à la vision par ordinateur à grande échelle, en passant par des applications web full-stack.",
+    "cta_projects": "Voir les Projets",
+    "cta_github": "GitHub",
+    "cta_linkedin": "LinkedIn",
+    "stat1_label": "Projets IA & ML",
+    "stat2_label": "Technologies IA & Web",
+    "stat3_label": "Certifications"
+  },
+  "projects": {
+    "title": "Projets",
+    "featured_tag": "PFE · Al Barid Bank · Vedette",
+    "view_github": "Voir sur GitHub",
+    "view_demo": "Démo en direct",
+    "view_video": "Voir la démo",
+    "tags": {
+      "ai": "IA / NLP",
+      "cv": "Vision par Ordinateur",
+      "fullstack": "Full-Stack",
+      "robotics": "Robotique",
+      "nlp": "NLP · LLM"
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "group_ai": "IA / ML",
+    "group_fullstack": "Full-Stack",
+    "group_infra": "Infrastructure IA",
+    "group_tools": "Outils & Langages"
+  },
+  "experience": {
+    "title": "Expérience",
+    "present": "Présent",
+    "pfe": "Stage PFE",
+    "internship": "Stage"
+  },
+  "certifications": {
+    "title": "Certifications"
+  },
+  "contact": {
+    "title": "Construisons",
+    "title_accent": "quelque chose.",
+    "subtitle": "Je suis activement à la recherche de postes en Ingénierie IA et Développement Full-Stack. Si vous construisez quelque chose d'intéressant, j'aimerais en entendre parler.",
+    "availability": "Ouvert aux opportunités — Disponible juillet 2026",
+    "email_label": "Email",
+    "github_label": "GitHub",
+    "linkedin_label": "LinkedIn",
+    "phone_label": "Téléphone"
+  }
+}

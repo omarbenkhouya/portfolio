@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "available": "Available · Jul 2026"
+  },
+  "hero": {
+    "badge": "Master's in AI & Connected Objects — Ibn Tofail University",
+    "role1": "AI Engineer",
+    "role2": "Full-Stack Developer",
+    "role3": "RAG Systems Builder",
+    "location": "Kenitra, Morocco",
+    "description": "I build intelligent systems and ship real products. From production RAG pipelines on real banking data, to computer vision at scale, to full-stack web apps.",
+    "cta_projects": "View Projects",
+    "cta_github": "GitHub",
+    "cta_linkedin": "LinkedIn",
+    "stat1_label": "AI & ML Projects",
+    "stat2_label": "AI & Web Technologies",
+    "stat3_label": "Certifications"
+  },
+  "projects": {
+    "title": "Projects",
+    "featured_tag": "PFE · Al Barid Bank · Featured",
+    "view_github": "View on GitHub",
+    "view_demo": "Live Demo",
+    "view_video": "Watch Demo",
+    "tags": {
+      "ai": "AI / NLP",
+      "cv": "Computer Vision",
+      "fullstack": "Full-Stack",
+      "robotics": "Robotics",
+      "nlp": "NLP · LLM"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "group_ai": "AI / ML",
+    "group_fullstack": "Full-Stack",
+    "group_infra": "AI Infrastructure",
+    "group_tools": "Tools & Languages"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "pfe": "PFE Internship",
+    "internship": "Internship"
+  },
+  "certifications": {
+    "title": "Certifications"
+  },
+  "contact": {
+    "title": "Let's build",
+    "title_accent": "something.",
+    "subtitle": "I'm actively looking for AI Engineering and Full-Stack roles. If you're building something interesting, I'd love to hear about it.",
+    "availability": "Open to opportunities — Available July 2026",
+    "email_label": "Email",
+    "github_label": "GitHub",
+    "linkedin_label": "LinkedIn",
+    "phone_label": "Phone"
+  }
+}

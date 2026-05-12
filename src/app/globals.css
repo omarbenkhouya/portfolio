@@ -1,26 +1,62 @@
-@import "tailwindcss";
+/* FILE: src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* ── LIGHT MODE ── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 210 20% 98%;
+  --foreground: 215 25% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 25% 10%;
+  --muted: 210 15% 93%;
+  --muted-foreground: 215 15% 45%;
+  --border: 215 20% 88%;
+  --accent: 195 100% 40%;
+  --accent-foreground: 0 0% 100%;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── DARK MODE ── */
+.dark {
+  --background: 216 28% 5%;
+  --foreground: 210 20% 90%;
+  --card: 216 25% 8%;
+  --card-foreground: 210 20% 90%;
+  --muted: 216 20% 12%;
+  --muted-foreground: 215 15% 50%;
+  --border: 215 20% 14%;
+  --accent: 195 100% 50%;
+  --accent-foreground: 216 28% 5%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: hsl(var(--border));
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-mono), monospace;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: hsl(var(--background)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 2px; }
+
+/* SELECTION */
+::selection {
+  background: hsl(var(--accent) / 0.2);
+  color: hsl(var(--accent));
+}
+
+/* GRID BACKGROUND UTIL */
+.bg-grid {
+  background-image:
+    linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
