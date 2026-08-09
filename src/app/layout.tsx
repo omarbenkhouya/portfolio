@@ -21,12 +21,12 @@ const syne = Syne({
 export const metadata: Metadata = {
   title: "Omar Benkhouya — AI Engineer & Full-Stack Developer",
   description:
-    "AI Master's student graduating July 2026. Building intelligent systems and full-stack products — RAG pipelines, computer vision, Next.js apps.",
+    "AI Engineer, Master's graduate. Building intelligent systems and full-stack products — RAG pipelines, computer vision, Next.js apps.",
   keywords: ["AI Engineer", "Full-Stack Developer", "RAG", "Next.js", "Machine Learning", "Morocco"],
   authors: [{ name: "Omar Benkhouya" }],
   openGraph: {
     title: "Omar Benkhouya",
-    description: "AI Engineer & Full-Stack Developer",
+    description: "AI Engineer, Master's graduate. Building intelligent systems and full-stack products — RAG pipelines, computer vision, Next.js apps.",
     type: "website",
   },
 };

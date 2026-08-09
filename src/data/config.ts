@@ -10,7 +10,7 @@ export const siteConfig = {
   location: "Kénitra, Morocco",
   github: "https://github.com/omarbenkhouya",
   linkedin: "https://www.linkedin.com/in/omar-benkhouya-858138317",
-  availableDate: "July 2026",
+  availableDate: "Available Immediately",
   // ↓ Your photo in /public
   avatar: "/Profile.jpeg",
 };
@@ -161,8 +161,8 @@ export const experience = [
     logo: "/ALBARID.png",
     location: { en: "Rabat, Morocco", fr: "Rabat, Maroc" },
     type: "experience.pfe",
-    startDate: { en: "Jan 2025", fr: "Jan 2025" },
-    endDate: { en: "Present", fr: "Présent" },
+    startDate: { en: "Mar 2026", fr: "Mars 2026" },
+    endDate: { en: "Aug 2026", fr: "Août 2026" },
     role: {
       en: "AI Engineer Intern — RAG System (PFE)",
       fr: "Stagiaire Ingénieur IA — Système RAG (PFE)",
@@ -286,7 +286,7 @@ export const education = [
     degree: { en: "Master's in AI & Connected Objects", fr: "Master en IA & Objets Connectés" },
     institution: "Université Ibn Tofail",
     location: { en: "Kénitra, Morocco", fr: "Kénitra, Maroc" },
-    period: { en: "Oct 2024 — Jul 2026", fr: "Oct. 2024 — Juil. 2026" },
+    period: { en: "Oct 2024 — Jun 2025", fr: "Oct. 2024 — Juin 2025" },
   },
   {
     degree: { en: "Bachelor's in AI & Data Engineering", fr: "Licence en IA & Ingénierie de Données" },

@@ -36,7 +36,7 @@ export function Hero() {
           <motion.div {...fadeUp(0)} className="mb-6">
             <div className="inline-flex items-center gap-2 text-xs font-mono px-3 py-1.5 border border-border rounded-sm bg-muted/40 text-muted-foreground flex-wrap">
               <span className="text-emerald-400">~$</span>
-              <span className="break-words">./omar --role &quot;AI + Full-Stack&quot; --status open-to-work</span>
+              <span className="break-words">./omar --role &quot;AI + Full-Stack&quot; --status available-now</span>
               <span className="w-2 h-3.5 bg-cyan-400 inline-block animate-pulse flex-shrink-0" />
             </div>
           </motion.div>

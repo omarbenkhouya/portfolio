@@ -8,7 +8,7 @@ export function Footer() {
       <span className="flex items-center gap-1.5">
         {siteConfig.location}
         <span className="text-emerald-400">·</span>
-        Available Jul 2026
+        Available Immediately
       </span>
     </footer>
   );
